@@ -12,17 +12,22 @@
 
 - (instancetype)init
 {
-    // Call the NSObject's method init
+    return [self initWithProductName:@"Unknown"];
+}
+
+- (instancetype)initWithProductName:(NSString *)productName
+{
     self = [super init];
-    
-    // Did it return something or nil?
     if (self) {
-        // Give voltage something value
+        _productName = [productName copy];
         _voltage = 120;
     }
-    
-    // Return a pointer to the new object
     return self;
+}
+
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"<%@: %d volts>", self.productName, self.voltage];
 }
 
 @end

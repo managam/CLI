@@ -7,11 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BNRAppliance.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        // NSLog(@"Hello, World!");
+        
+        BNRAppliance *appliance = [[BNRAppliance alloc] init];
+        NSLog(@"Appliance is %@", appliance);
+        
+        [appliance setProductName:@"Washing Machine"];
+        [appliance setVoltage:240];
+        NSLog(@"Appliance is %@", appliance);
     }
     return 0;
 }
