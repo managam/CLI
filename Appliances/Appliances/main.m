@@ -19,7 +19,10 @@ int main(int argc, const char * argv[]) {
         
         [appliance setValue:@"Washing Machine" forKey:@"productName"];
         // [appliance setProductName:@"Washing Machine"];
-        [appliance setVoltage:240];
+        
+        // [appliance setVoltage:240];
+        [appliance setValue:[NSNumber numberWithInteger:120] forKey:@"voltage"];
+        
         NSLog(@"Appliance is %@", appliance);
         NSLog(@"Appliance is %@", [appliance valueForKey:@"productName"]);
     }
