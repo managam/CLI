@@ -14,7 +14,7 @@ int main(int argc, const char * argv[]) {
         // insert code here...
         // NSLog(@"Hello, World!");
         BNRBlogger *logger = [[BNRBlogger alloc] init];
-        NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2.0
+        __unused NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2.0
                                                           target:logger
                                                         selector:@selector(updateLastTime:)
                                                         userInfo:nil
