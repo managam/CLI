@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BNRBlogger : NSObject
+@interface BNRBlogger : NSObject <NSURLConnectionDelegate, NSURLConnectionDataDelegate>
+{
+    NSMutableData *_incomingData;
+}
 
 @property (nonatomic) NSDate *lastTime;
 - (NSString *)lastTimeString;
