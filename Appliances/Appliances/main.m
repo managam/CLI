@@ -17,9 +17,11 @@ int main(int argc, const char * argv[]) {
         BNRAppliance *appliance = [[BNRAppliance alloc] init];
         NSLog(@"Appliance is %@", appliance);
         
-        [appliance setProductName:@"Washing Machine"];
+        [appliance setValue:@"Washing Machine" forKey:@"productName"];
+        // [appliance setProductName:@"Washing Machine"];
         [appliance setVoltage:240];
         NSLog(@"Appliance is %@", appliance);
+        NSLog(@"Appliance is %@", [appliance valueForKey:@"productName"]);
     }
     return 0;
 }

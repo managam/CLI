@@ -9,9 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @interface BNRAppliance : NSObject
+{
+    NSString *_productName;
+}
 
 @property (nonatomic) int voltage;
-@property (nonatomic, copy) NSString *productName;
+// @property (nonatomic, copy) NSString *productName;
 
 // The designated initializer
 - (instancetype)initWithProductName:(NSString *)productName;

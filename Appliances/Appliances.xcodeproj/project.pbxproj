@@ -65,9 +65,9 @@
 			children = (
 				5B5325421D7B0F1F0054B45C /* BNRAppliance.h */,
 				5B5325431D7B0F1F0054B45C /* BNRAppliance.m */,
-				5B5325391D7B0DCD0054B45C /* main.m */,
 				5B5325451D7B1CCE0054B45C /* BNROwnedAppliance.h */,
 				5B5325461D7B1CCE0054B45C /* BNROwnedAppliance.m */,
+				5B5325391D7B0DCD0054B45C /* main.m */,
 			);
 			path = Appliances;
 			sourceTree = "<group>";
