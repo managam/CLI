@@ -16,5 +16,6 @@
 @property (nonatomic) NSDate *lastTime;
 - (NSString *)lastTimeString;
 - (void)updateLastTime:(NSTimer *)timer;
+- (void)zoneChange:(NSNotification *)note;
 
 @end

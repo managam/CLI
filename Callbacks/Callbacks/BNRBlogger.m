@@ -60,4 +60,10 @@
     _incomingData = nil;
 }
 
+// Zone changed
+- (void)zoneChange:(NSNotification *)note
+{
+    NSLog(@"The system time zone has changed!");
+}
+
 @end
