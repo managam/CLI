@@ -25,7 +25,10 @@
 - (void)updateLastTime:(NSTimer *)timer
 {
     NSDate *now = [[NSDate alloc] init];
-    [self setLastTime:now];
+    [self willChangeValueForKey:@"lastTime"];
+    // [self setLastTime:now];
+    _lastTime = now;
+    [self didChangeValueForKey:@"lastTime"];
     NSLog(@"Just set time to %@", self.lastTimeString);
 }
 
